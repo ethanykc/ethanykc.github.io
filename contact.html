@@ -54,30 +54,30 @@
 		</div><!--end nav container-->
 	
 		<div class="main-container" >
-		<section class="cover fullscreen image-bg" id="particles-js" style="height:826px;" >
-			<div class="container-form" >  
-  				<form id="contact" action="mailto:ethan.chung@uwaterloo.ca" method="post">
+		<section class="fullscreen cover image-bg" id="particles-js" style="height:826px;" >
+			<div class="container-form" style="background-color: transparent;" >  
+  				<form id="contact" action="mailto.php" method="post" name="contact_form">
    					 <h3 style="color: #373d3f">Contact Form</h3>
-   					 <h4 style="color: #1596bb">Contact me, and get reply within 3 Business Days!</h4>
-   					 <fieldset>
-     					 <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-   					 </fieldset>
-   					 <fieldset>
-    				    <input placeholder="Email Address" type="email" tabindex="2" required>
+   					 	<h4 style="color: #1596bb">Contact me, and get reply within 3 Business Days!</h4>
+   					 	<fieldset>
+     					 <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name">
+   					    </fieldset>
+   						<fieldset>
+    				    <input placeholder="Email Address" type="email" tabindex="2" required name="email">
     				 </fieldset>
-   					 <fieldset>
-      					<input placeholder="Phone Number" type="tel" tabindex="3" required>
+   						<fieldset>
+      					<input placeholder="Phone Number" type="tel" tabindex="3">
     				 </fieldset>
-   					 <fieldset>
-     				    <input placeholder="http://" type="url" tabindex="4" required>
+   						<fieldset>
+     				    <input placeholder="http://www." type="url" tabindex="4" name="message">
    					 </fieldset>
-   					 <fieldset>
+   						<fieldset>
      				    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
    				     </fieldset>
-   					 <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+   						<fieldset>
+                        <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="Sending...">Submit</button>
     				 </fieldset>
-  					</form>
+  				</form>
 			</div>
 		</section>
 	<footer class="footer bg-light" style="background-color:#fafafa; max-height:60px;">
@@ -127,6 +127,7 @@
 <script src="scripts/scripts.js"></script>
 <script src="scripts/smooth-scroll.js"></script>
 <script type="scripts/text/javascript" src="view.js"></script>
+<script src="scripts/mailto.js"></script>
 
 
 
