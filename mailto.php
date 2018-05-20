@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST["submit"])) {
 $errors = '';
 $myemail = 'ethan.chung@uwaterloo.ca';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
@@ -30,6 +31,7 @@ $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
-header('Location: contact.html');
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+}
 }
 ?>
