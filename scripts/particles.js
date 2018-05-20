@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 1000,
+        value: 175,
         density: {
           enable: true,
           value_area: 800
@@ -36,7 +36,7 @@ var pJS = function(tag_id, params){
           color: '#ff0000'
         },
         polygon: {
-          nb_sides: 8
+          nb_sides: 3
         },
         image: {
           src: '',
