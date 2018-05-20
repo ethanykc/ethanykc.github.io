@@ -62,6 +62,8 @@ body.boxed-layout {
 body.boxed-layout .main-container {
   background: #fff;
 }
+
+
 body.boxed-layout,
 .boxed-layout .nav-container,
 .boxed-layout .main-container,
@@ -677,7 +679,7 @@ footer.bg-dark li,
 }
 .container.image-bg .row {
   position: relative;
-  z-index: 3;
+  z-index: -1;
 }
 .background-image-holder {
   position: absolute;
@@ -727,6 +729,10 @@ footer.bg-dark li,
     -webkit-transform: none !important;
   }
 }
+
+
+
+
 /*!---------- 6. BUTTONS ----------*/
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5719,3 +5725,4 @@ footer.bg-dark a {
     padding-bottom: 240px !important;
   }
 }
+
