@@ -1,35 +1,28 @@
 <?php
-$errors = '';
-$myemail = 'ethan.chung@uwaterloo.ca';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-$phone = $_POST['phone'];
-$site = $_POST['site'];
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$phone = $_POST['phone'];
+	$site = $_POST['site'];
 
-if( empty($errors))
-{
-$to = $myemail;
-$email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email_address \n Website: $site \n Phone: $phone \n Message \n $message";
-$headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$email_body,$headers);
-//redirect to the 'thank you' page
-echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
-}
+	$email_from = 'ey2chung@uwaterloo.ca';
+	$email_subject = "Form Submission";
+	$email_body = "Name: $name. \n".
+					"E-mail: $email. \n".
+						"Message: $message. \n".
+							"Site: $site. \n".
+								"Phone: $phone. \n";
+	
+	$to = "ey2chung@uwaterloo.ca";
+
+	$headers = "From: $email_from \r\n";
+	
+	$headers .= "Reply-To: $email \r\n";
+
+	mail($to, $email_subject, $email_body, $headers);
+
+	echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
+	header("Location: contact.html");
+	
 ?>
