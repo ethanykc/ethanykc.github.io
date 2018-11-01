@@ -131,3 +131,8 @@ particlesJS('particles-js',
   }
 
 );
+
+$(window).on('load', function() {
+    $('header').removeClass('fade-out');
+    $('main').removeClass('fade-out');
+});

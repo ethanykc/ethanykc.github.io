@@ -31,6 +31,7 @@
             <li class="active"> <a href="index.html" class ="bold;" style=" font-size: 12px;"> Home </a> </li>
             <li class="bold"> <a href="resume.html" class="bold" style="font-size: 12px;"> Resume </a> </li>
             <li class="bold"> <a href="contact.html" class="bold" style="font-size: 12px;"> Contact </a> </li>
+			<li class="active"> <a href="portfolio.html" class ="bold;" style=" font-size: 12px;"> Portfolio </a> </li>
           </ul>
         </div>
       </div>
@@ -41,27 +42,28 @@
 <!--end nav container-->
 
 <div class="main-container" >
+<div class = " fade-out temp-main">
   <section class="fullscreen cover image-bg" id="particles-js" style="height:826px;" ></section>
     <div class="container-form" style="background-color: transparent;" >
       <form id="contact" action="mailto.php" method="post" name="contact_form" data-abide>
         <h3 style="color: #373d3f">Contact Form</h3>
         <h4 style="color: #1596bb">Contact me, and get reply within 3 Business Days!</h4>
-        <fieldset>
+        	<fieldset>
           <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name">
         </fieldset>
-        <fieldset>
+        	<fieldset>
           <input placeholder="Email Address" type="email" tabindex="2" required name="email">
         </fieldset>
-        <fieldset>
+			<fieldset>
           <input placeholder="Phone Number" type="tel" tabindex="3" name="phone">
         </fieldset>
-        <fieldset>
+       		<fieldset>
           <input placeholder="http://" type="text" tabindex="4" name="site">
         </fieldset>
-        <fieldset>
+        	<fieldset>
           <textarea placeholder="Type your Message Here...." tabindex="5" required name="message"></textarea>
         </fieldset>
-        <fieldset>
+        	<fieldset>
           <button name="submit" type="submit" value="Submit" id="contact-submit" data-submit="Sending...">Submit</button>
         </fieldset>
       </form>
@@ -82,6 +84,7 @@
     </div>
   </footer>
 </div>
+</div>	
 <!-- scripts --> 
 <script src="scripts/particles.js"></script> 
 <script src="scripts/app.js"></script> 
@@ -96,5 +99,8 @@
 <script src="scripts/smooth-scroll.js"></script> 
 <script type="scripts/text/javascript" src="view.js"></script> 
 <script src="scripts/mailto.js"></script>
+		<div class="content-temp">
+		<em style = 'font-size: 14pt;'>This section is currently under development as github does not support PHP forms. </em>
+	</div>
 </body>
 </html>
